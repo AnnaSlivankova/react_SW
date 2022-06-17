@@ -13,22 +13,6 @@
     /*grid-gap: 10px;*/
 }
 
-.header {
-    grid-area: h;
-    background-color: bisque;
-}
 
-.header img {
-    width: 60px;
-}
 
-.nav {
-    grid-area: n;
-    /*float: left;*/
-    background-color: coral;
-}
 
-.content {
-    grid-area: c;
-    background-color: darkcyan;
-}
