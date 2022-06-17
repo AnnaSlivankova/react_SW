@@ -1,0 +1,13 @@
+
+.content {
+    grid-area: c;
+    background-color: darkcyan;
+}
+
+.item {
+    color: aquamarine;
+}
+
+.post {
+    color: coral;
+}
