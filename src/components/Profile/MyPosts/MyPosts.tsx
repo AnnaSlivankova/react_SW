@@ -11,10 +11,14 @@ const MyPosts = () => {
                 <button>Add new post</button>
             </div>
             <div className={b.content}>
-                <Post/>
-                <Post/>
-                <Post/>
-                <Post/>
+                <Post message={"This is my first message"}
+                      like={1}/>
+                <Post message={"I bought a dag"}
+                      like={50}/>
+                <Post message={"Guys, should i bua a new car?"}
+                      like={19}/>
+                <Post message={"Hello, guess my name?"}
+                      like={4}/>
             </div>
         </div>
     );
