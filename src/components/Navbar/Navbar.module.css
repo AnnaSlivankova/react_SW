@@ -3,12 +3,14 @@
     grid-area: n;
     /*float: left;*/
     background-color: coral;
+    padding: 25px;
 }
 
-.item {
+.item a {
     color: white;
+    text-decoration: none;
 }
 
-.item.active {
+.item a.active {
     color: gold;
 }
