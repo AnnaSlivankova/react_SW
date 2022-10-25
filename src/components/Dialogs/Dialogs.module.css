@@ -3,8 +3,10 @@
     grid-template-columns: 2fr 10fr;
 }
 
-.dialogItems {
+.dialogItems a {
     padding: 10px;
+    text-decoration: none;
+    color: #212121;
 }
 
 .dialogItems .dialog {
