@@ -1,5 +1,6 @@
 import React from 'react';
-import b from './Post.module.css';
+import s from './Post.module.css';
+import am from '../../ProfileInfo/ava.jpg';
 
 export type PostsType = {
     message: string
@@ -8,9 +9,9 @@ export type PostsType = {
 
 const Post = (props: PostsType) => {
     return (
-        <div className={b.item}>
+        <div className={s.item}>
             <img
-                src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxB9HhqQE3hXGbL1j0AMd43X36-yVaVHWjWQ&usqp=CAU'}/>
+                src={am}/>
             {props.message}
             <div>
                 <span>like {props.like}</span>

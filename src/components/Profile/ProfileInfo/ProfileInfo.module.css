@@ -6,3 +6,8 @@
 .content {
     padding: 10px;
 }
+
+.ava {
+    width: 150px;
+    border-radius: 10px;
+}

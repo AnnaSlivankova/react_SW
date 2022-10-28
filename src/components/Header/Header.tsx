@@ -1,10 +1,11 @@
 import React from 'react';
 import c from './Header.module.css';
+import logo from './logo.jpeg';
 
 const Header = () => {
     return (
         <header className={c.header}>
-            <img src='https://klike.net/uploads/posts/2020-04/1587719791_1.jpg'/>
+            <img src={logo}/>
         </header>
     );
 }

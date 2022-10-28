@@ -17,7 +17,7 @@ function App() {
             <Header/>
             <Navbar/>
             <div className={'app-wrapper-dialogs'}>
-                <Route path='/dialogs' component={Dialogs}/>
+                <Route path='/dialogsItems' component={Dialogs}/>
                 <Route path='/profile' component={Profile}/>
                 <Route path='/news' component={News}/>
                 <Route path='/music' component={Music}/>

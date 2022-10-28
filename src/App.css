@@ -15,6 +15,7 @@
 
 .app-wrapper-dialogs {
     grid-area: c;
+    /*background-color: #ccd8ec;*/
     background-color: #ccd8ec;
 }
 
