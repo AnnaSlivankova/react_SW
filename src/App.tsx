@@ -7,13 +7,11 @@ import Navbar from "./components/Navbar/Navbar";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
-import {DialogsType, MessagesType, PostsType} from "./index";
 import {BrowserRouter, Route} from "react-router-dom";
+import {StateType} from "./index";
 
 type AppPropsType = {
-    dialogs: DialogsType[]
-    messages: MessagesType[]
-    posts: PostsType[]
+    state: StateType
 }
 
 function App(props: AppPropsType) {
@@ -24,12 +22,12 @@ function App(props: AppPropsType) {
                 <Navbar/>
                 <div className={'app-wrapper-dialogs'}>
                     <Route path='/dialogsItems' render={() => <Dialogs
-                        dialogs={props.dialogs}
-                        messages={props.messages}
+                        dialogs={props.state.dialogPage.dialogs}
+                        messages={props.state.dialogPage.messages}
                     />}
                     />
                     <Route path='/profile' render={() => <Profile
-                        posts={props.posts}
+                        posts={props.state.profilePage.posts}
                     />}
                     />
                     <Route path='/news' render={News}/>
