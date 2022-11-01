@@ -1,3 +1,5 @@
+import avatar from '../components/Profile/ProfileInfo/ava.jpg';
+
 export type PostsType = {
     id: number
     message: string
@@ -6,6 +8,7 @@ export type PostsType = {
 export type DialogsType = {
     id: number
     name: string
+    avatar: string
 }
 export type MessagesType = {
     id: number
@@ -23,10 +26,10 @@ const state = {
     },
     dialogPage: {
         dialogs: [
-            {id: 1, name: "Anna"},
-            {id: 2, name: "Alex"},
-            {id: 3, name: "Ron"},
-            {id: 4, name: "Helga"},
+            {id: 1, name: "Anna", avatar: avatar},
+            {id: 2, name: "Alex", avatar: avatar},
+            {id: 3, name: "Ron", avatar: avatar},
+            {id: 4, name: "Helga", avatar: avatar},
         ],
         messages: [
             {id: 1, message: "Hi! When do you come to as?"},
@@ -34,7 +37,10 @@ const state = {
             {id: 3, message: "Call you boss! Immediately...he is so angry"},
             {id: 4, message: "You need this car)) have a look..."},
         ],
-    }
+    },
+    // friendsBar: {
+    //     id: 1, ava: avatar, name:
+    // }
 }
 
 

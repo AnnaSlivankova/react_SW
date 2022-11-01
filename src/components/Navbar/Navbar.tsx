@@ -1,8 +1,15 @@
 import React from 'react';
 import c from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
+import FriendsBar from "./FriendsBar/FriendsBar";
+import {StateType} from "../../index";
+import {AppPropsType} from "../../App";
 
-const Navbar = () => {
+type NavBarType = {
+
+}
+
+const Navbar = (props: AppPropsType) => {
     return (
         <nav className={c.nav}>
             <div className={c.item}>
@@ -20,6 +27,9 @@ const Navbar = () => {
             <div className={c.item}>
                 <NavLink to='/Settings' activeClassName={c.active}>Settings</NavLink>
             </div>
+
+            <FriendsBar friend={props.state.dialogPage.dialogs}/>
+
         </nav>
     );
 }

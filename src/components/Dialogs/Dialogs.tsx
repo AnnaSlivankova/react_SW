@@ -11,7 +11,7 @@ type DialogsPropsType = {
 }
 
 const Dialogs = (props: DialogsPropsType) => {
-    const dialogsElement = props.dialogs.map(d => <DialogsItems id={d.id} name={d.name}/>)
+    const dialogsElement = props.dialogs.map(d => <DialogsItems id={d.id} name={d.name} avatar={d.avatar}/>)
     const messagesElement = props.messages.map(m => <DialogMessage message={m.message}/>)
 
     return (

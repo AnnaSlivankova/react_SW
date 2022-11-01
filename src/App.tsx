@@ -9,8 +9,9 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import {BrowserRouter, Route} from "react-router-dom";
 import {StateType} from "./index";
+import FriendsBar from "./components/Navbar/FriendsBar/FriendsBar";
 
-type AppPropsType = {
+export type AppPropsType = {
     state: StateType
 }
 
@@ -19,7 +20,7 @@ function App(props: AppPropsType) {
         <BrowserRouter>
             <div className={'app-wrapper'}>
                 <Header/>
-                <Navbar/>
+                <Navbar state={props.state}/>
                 <div className={'app-wrapper-dialogs'}>
                     <Route path='/dialogsItems' render={() => <Dialogs
                         dialogs={props.state.dialogPage.dialogs}
@@ -34,6 +35,9 @@ function App(props: AppPropsType) {
                     <Route path='/music' render={Music}/>
                     <Route path='/settings' render={Settings}/>
                 </div>
+
+                {/*<FriendsBar friend={props.state.dialogPage.dialogs}/>*/}
+
             </div>
         </BrowserRouter>
     );

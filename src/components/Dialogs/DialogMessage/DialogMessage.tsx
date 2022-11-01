@@ -6,7 +6,7 @@ type DialogMessageType = {
 }
 
 const DialogMessage = (props: DialogMessageType) => {
-    return <div className={s.message}>{props.message}</div>
+    return <div className={s.message}> {props.message}</div>
 }
 
 export default DialogMessage;
